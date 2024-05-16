@@ -8,33 +8,32 @@
   },
   "Home": {
     "title": "Olá, eu sou",
-    "typedString1": "Desenvolvedor Web",
+    "typedString1": "Desenvolvedor FullStack",
     "typedString2": "Desenvolvedor Vtex",
-    "typedString3": "Desenvolvedor WordPress",
-    "typedString4": "Desenvolvedor React",
+    "typedString3": "Desenvolvedor React",
     "button": "contato"
   },
   "AboutMe": {
     "title": "Quem sou",
-    "text": "Meu nome é Igor Rocha, sou Front End Developer, desenvolvo sites, blogs e ecommerces de alta qualidade, com foco em performace, responsividade, animações e SEO. Estou sempre buscando se atualizar com as novas tecnologias que surgem, de maneira a sempre inovar e ser mais eficiente."
+    "text": "Olá! Sou Igor Rocha, desenvolvedor fullstack com cinco anos de experiência. Minha paixão pela tecnologia me conduziu ao desenvolvimento web, onde crio uma variedade de produtos digitais. No front end, utilizo React.js, TypeScript, Tailwind CSS, Sass e Vite ou Next.js. Com Apollo Client e GraphQL, construo interfaces dinâmicas e eficientes, priorizando a usabilidade. No backend, confio em Node.js e NestJS, combinados com PostgreSQL, TypeORM ou Prisma para garantir armazenamento seguro de dados. Domino Docker para portabilidade e consistência dos aplicativos. Desenvolvo desde sites e blogs até e-commerces, e-mails marketing, dashboards e sistemas internos, oferecendo manutenção e suporte contínuos. Para qualidade do código, utilizo Jest e Vitest para testes automatizados, assegurando estabilidade e confiabilidade do produto. Estou pronto para transformar suas ideias em realidade digital!"
   },
   "Services": {
     "title": "Serviços",
     "box1": {
-      "title": "Web Sites",
-      "text": "Criação de sites responsivos, landing pages, blogs, sites dinânicos."
+      "title": "Websites e Blogs",
+      "text": "Criação de websites e blogs personalizados."
     },
     "box2": {
       "title": "E-commerce",
-      "text": "Criação e desenvolvimento de lojas virtuais customizadas."
+      "text": "Construção de plataformas de comércio eletrônico robustas e escaláveis,"
     },
     "box3": {
-      "title": "Wordpress",
-      "text": "Criação e customização de templates, correções e atualizações de plugins."
+      "title": "Dashboards",
+      "text": "Desenvolvimento de painéis de controle personalizados e visualizações de dados."
     },
     "box4": {
-      "title": "Email Marketing",
-      "text": "Desenvolvimento de Email Marketing e templates customizados."
+      "title": "Sistemas de Gerenciamento",
+      "text": "Criação de sistemas personalizados para gerenciamento de projetos."
     }
   },
   "Experiences": {
@@ -44,70 +43,170 @@
       "text": [
         "Desenvolvimento e manutenção de páginas em Wordpress ou Vtex para Phooto.",
         "Desenvolvimento e manutenção de E-mail Marketing.",
-        "Elaboração de códigos para alterações de páginas de destino de acordo com parâmetros recebidos.", 
+        "Elaboração de códigos para alterações de páginas de destino de acordo com parâmetros recebidos.",
         "Implementação das melhores práticas do SEO."
-      ]  
+      ]
     },
     "experiece2": {
       "year": "2019-2019",
       "text": [
         "Desenvolvimento de e-commerce na plataforma VTEX para Katmandu, Vivenda do camarão, Caído Pneus usando HTML5, SCSS, Javascript, jQuery.",
-        "Desenvolvimento de novas funcionalidades e refatoração de código.", 
+        "Desenvolvimento de novas funcionalidades e refatoração de código.",
         "Automatização de processos utilizando o Postman Collection Runner.",
         "Desenvolvimento e manutenção de websites com Wordpress para São Cristóvão, Saesp e Bardal.",
         "Melhoria do desempenho seguindo boas práticas apontadas pelo Google Pagespeed."
-        ]
+      ]
     },
     "experiece3": {
-      "year": "2019-2021",
+      "year": "2019-2024",
       "text": [
-      "Desenvolvimento do e-commerce na plataforma VTEX para Rihappy.com.br utilizando HTML5, SCSS, Javascript, jQuery, Gulp, Babel, Node.js, Webpack, React, Typescript e Graphql.",
-      "Desenvolvimento de novas funcionalidades e refatoração de código.",
-      "Automatização de processos usando Postman Collection Runner e Node.js.", 
-      "Versionamento com Bitbucket e Gitlab. Metodologia Scrum. Testes de features, merge e deploy para produção."
-    ]
+        "Desenvolvimento do e-commerce na plataforma VTEX para Rihappy.com.br utilizando HTML5, SCSS, Javascript, jQuery, Gulp, Babel, Node.js, Webpack, React, Typescript e Graphql.",
+        "Desenvolvimento de novas funcionalidades e refatoração de código.",
+        "Automatização de processos usando Postman Collection Runner e Node.js.",
+        "Versionamento com Bitbucket e Gitlab. Metodologia Scrum. Testes de features, merge e deploy para produção."
+      ]
     }
   },
   "Portfolios": {
     "title": "Portfolio",
     "project": "Projeto",
-    "project1": {      
-      "text": "Loja de brinquedos Rihappy."
-    },
-    "project2": {
-      "text": "Loja Vivenda do Camarão."
-    },
-     "project3": {      
-      "text": "Loja Phooto."
-    },
-     "project4": {      
-      "text": "Loja Katmandu."
-    },
-     "project5": {      
-      "text": "Site SBED."
-    },
-     "project6": {      
-      "text": "Site São Cristovão."
-    },
-     "project7": {      
-      "text": "Loja Caido Pneus."
-    },
-     "project8": {      
-      "text": "Site Bardahl."
-    }
+    "projects": [
+      {
+        "text": "Loja de brinquedos Rihappy.",
+        "link": "https://rihappy.com.br",
+        "image": "/src/images/projects/rihappy/home.webp"
+      },
+      {
+        "text": "Loja Vivenda do Camarão.",
+        "link": "https://www.emporiovivendadocamarao.com.br/",
+        "image": "/src/images/projects/vivenda-do-caramao/home.webp"
+      },
+      {
+        "text": "Loja Phooto.",
+        "link": "https://www.phooto.com.br/",
+        "image": "/src/images/projects/phooto/home.webp"
+      },
+      {
+        "text": "Loja Katmandu.",
+        "link": "https://www.katmandu.com.br/",
+        "image": "/src/images/projects/katmandu/home.webp"
+      },
+      {
+        "text": "Site SBED.",
+        "link": "https://sbed.org.br",
+        "image": "/src/images/projects/sbed/home.webp"
+      },
+      {
+        "text": "Site São Cristovão.",
+        "link": "https://sbed.org.br",
+        "image": "/src/images/projects/sao-cristovao/home.webp"
+      },
+      {
+        "text": "Loja Caido Pneus.",
+        "link": "https://www.caiadopneus.com.br/",
+        "image": "/src/images/projects/caiado-pneus/home.webp"
+      },
+      {
+        "text": "Site Bardahl.",
+        "link": "https://bardahl.com.br/",
+        "image": "/src/images/projects/bardahl/home.webp"
+      }
+    ]
   },
   "Knowledges": {
-    "title": "Conhecimentos"
+    "title": "Conhecimentos",
+    "list": [
+      {
+        "text": "React",
+        "image": "/src/images/logos/icon-react.svg"
+      },
+      {
+        "text": "Html5",
+        "image": "/src/images/logos/icon-html5.svg"
+      },
+      {
+        "text": "Javascript",
+        "image": "/src/images/logos/icon-javascript.svg"
+      },
+      {
+        "text": "Css3",
+        "image": "/src/images/logos/icon-css3.svg"
+      },
+      {
+        "text": "Jquery",
+        "image": "/src/images/logos/icon-jquery.svg"
+      },
+      {
+        "text": "Git",
+        "image": "/src/images/logos/icon-git.svg"
+      },
+      {
+        "text": "Sass",
+        "image": "/src/images/logos/icon-sass.svg"
+      },
+      {
+        "text": "Typescript",
+        "image": "/src/images/logos/icon-typescript.svg"
+      },
+      {
+        "text": "Vtex",
+        "image": "/src/images/logos/icon-vtex.svg"
+      },
+      {
+        "text": "Webpack",
+        "image": "/src/images/logos/icon-webpack.svg"
+      },
+      {
+        "text": "Redux",
+        "image": "/src/images/logos/icon-redux.svg"
+      },
+      {
+        "text": "Styled Component",
+        "image": "/src/images/logos/icon-styled-component.svg"
+      },
+      {
+        "text": "Next",
+        "image": "/src/images/logos/icon-next.svg"
+      },
+      {
+        "text": "Vite",
+        "image": "/src/images/logos/icon-vite.svg"
+      },
+      {
+        "text": "Graphql",
+        "image": "/src/images/logos/icon-graphql.svg"
+      },
+      {
+        "text": "Prisma",
+        "image": "/src/images/logos/icon-prisma.svg"
+      },
+      {
+        "text": "PostgreSql",
+        "image": "/src/images/logos/icon-postgresql.svg"
+      },
+      {
+        "text": "Nest",
+        "image": "/src/images/logos/icon-nest.svg"
+      },
+      {
+        "text": "Node",
+        "image": "/src/images/logos/icon-node.svg"
+      },
+      {
+        "text": "Jest",
+        "image": "/src/images/logos/icon-jest.svg"
+      }
+    ]
   },
   "Contacts": {
     "title": "CONTATO",
     "text": "Preencha o formulário e descreva as necessidades do seu projeto e entrarei em contato com você o mais breve possível.",
     "form": {
       "name": "Nome",
-      "nameRequired":"Por favor, insira seu nome",
-      "nameMsg":"Insira um nome com menos de 20 caracteres",
+      "nameRequired": "Por favor, insira seu nome",
+      "nameMsg": "Insira um nome com menos de 20 caracteres",
       "phone": "Telefone",
-      "phoneRequired":"Por favor, adicione seu número de telefone",
+      "phoneRequired": "Por favor, adicione seu número de telefone",
       "phoneMsg": "Telefone inválido",
       "email": "Email",
       "emailRequired": "Por favor, forneça seu e-mail",
@@ -115,10 +214,10 @@
       "sub": "Assunto",
       "subRequired": "OOPS, você se esqueceu de adicionar o assunto.",
       "description": "Descreva brevemente seu projeto ...",
-      "descriptionRequired":"Descreva resumidamente as necessidades do seu projeto ...",
-      "formSucess": "Formulário enviado com sucesso! Estarei entrando em contato em breve, obrigado!"
+      "descriptionRequired": "Descreva resumidamente as necessidades do seu projeto ...",
+      "formSuccess": "Formulário enviado com sucesso! Estarei entrando em contato em breve, obrigado!"
     },
-    "button":"Enviar"
+    "button": "Enviar"
   },
   "Footer": {
     "city": "Cidade"

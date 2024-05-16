@@ -4,7 +4,7 @@ import logo from '../../images/logos/logo.png'
 import { iconMenu } from '../icons/Icons'
 
 import ToggleButton from './ToggleButton'
-import UserContext from '../context/AppContext'
+import { UserContext } from '../context/AppContext'
 
 const Header: React.FC = () => {
   const context = useContext(UserContext)

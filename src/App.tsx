@@ -24,7 +24,7 @@ function App() {
         <Experience />
         <Portfolio />
         <Knowledge />
-        {/* <Contacts /> */}
+        <Contacts />
         <Footer />
       </GlobalContext>
     </>

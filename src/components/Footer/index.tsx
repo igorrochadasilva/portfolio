@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react'
 
-import UserContext from "../context/AppContext";
-import { iconLinkedin } from "../icons/Icons";
+import { UserContext } from '../context/AppContext'
+import { iconLinkedin } from '../icons/Icons'
 
 const Footer: React.FC = () => {
-  const context = useContext(UserContext);
-  const MContacts = context.state.messages.Footer;
-  const MNavbar = context.state.messages.Navbar;
+  const context = useContext(UserContext)
+  const MContacts = context.state.messages.Footer
+  const MNavbar = context.state.messages.Navbar
 
   return (
     <footer className="footer">
@@ -42,19 +42,13 @@ const Footer: React.FC = () => {
           <div className="col-lg-2 col-md-2 col-sm-6 align-items-center">
             <div className="d-flex justify-content-left">
               <aside className="icon-linkedin">
-                <a
-                  href="https://www.linkedin.com/in/igor-rocha-silva/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {iconLinkedin} 
+                <a href="https://www.linkedin.com/in/igor-rocha-silva/" target="_blank" rel="noreferrer">
+                  {iconLinkedin}
                   <span>Linkedin</span>
                 </a>
-                <p className="text-center">
-                  &copy; {new Date().getFullYear()}&nbsp; Igor Rocha.
-                </p>
-              </aside>              
-            </div>            
+                <p className="text-center">&copy; {new Date().getFullYear()}&nbsp; Igor Rocha.</p>
+              </aside>
+            </div>
           </div>
         </div>
       </div>
@@ -62,4 +56,4 @@ const Footer: React.FC = () => {
   )
 }
 
-export default Footer;
+export default Footer

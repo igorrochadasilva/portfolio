@@ -72,6 +72,11 @@
     margin: -0.3rem 0;
   }
 
+  .form-control::placeholder {
+    opacity: 1;
+    color: var(--primary-white);
+  }
+
   .error-message {
     color: var(--primary-red);
     text-align: left;
@@ -81,17 +86,22 @@
     font-weight: 900;
     color: var(--primary-green);
   }
+
+  .error-message {
+    font-weight: 900;
+    color: var(--primary-red);
+  }
 }
 
 /*------------------ INPUTS -------------------------------*/
-.btn-main-offer{
+.btn-main-offer {
   text-decoration: none;
 }
 
 .btn-main-offer.contact-btn {
   background-color: var(--primary-pink);
   transform: 1s;
-  
+
   &:hover {
     background-color: var(--primary-hard-pink);
     transform: 1s;
