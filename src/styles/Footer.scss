@@ -1,0 +1,33 @@
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-white);
+  padding: 3rem;
+
+  a {
+    text-decoration: none;
+    color: var(--primary-white);  
+    margin-bottom: 5px;
+    
+    &.active, &:focus,&:hover{      
+      color: var(--primary-white);   
+      text-decoration: none;
+    }
+  }
+
+  p {
+    margin-bottom: 5px;
+  }
+  
+  aside{
+    a{
+      display: flex;
+      align-items: center;
+      
+      svg{
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+
+  h1 {
+    color: var(--primary-white);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: var(--primary-light-grey);
+    font-size: 1.2rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--primary-dark-grey);
+    border-radius: 0;
+    color: var(--primary-white);
+    outline: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+
+    &:focus {
+      background: transparent;
+      color: var(--primary-white);
+      border-bottom: 0.125rem solid var(--primary-dark-grey);
+    }
+  }
+
+  textarea {
+    height: 12.2rem !important;
+  }
+
+  .container {
+    padding: 4rem 0;
+  }
+
+  .contact-btn {
+    margin: 1rem auto 0 auto;
+    width: auto;
+    display: block;
+  }
+
+  .line {
+    position: relative;
+    top: -0.8rem;
+    width: 0;
+    height: 0.125rem;
+    background: var(--primary-pink);
+    display: inline-block;
+  }
+
+  input:focus + .line,
+  textarea:focus + .line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+
+  input.form-control {
+    margin: -0.3rem 0;
+  }
+
+  textarea.form-control {
+    margin: -0.3rem 0;
+  }
+
+  .error-message {
+    color: var(--primary-red);
+    text-align: left;
+  }
+
+  .success-message {
+    font-weight: 900;
+    color: var(--primary-green);
+  }
+}
+
+/*------------------ INPUTS -------------------------------*/
+.btn-main-offer{
+  text-decoration: none;
+}
+
+.btn-main-offer.contact-btn {
+  background-color: var(--primary-pink);
+  transform: 1s;
+  
+  &:hover {
+    background-color: var(--primary-hard-pink);
+    transform: 1s;
+    transform: scale(1);
+  }
+}
+
+/*---------------- MEDIA -----------------------*/
+@media (max-width: 768px) {
+  .contacts {
+    overflow-x: hidden;
+  }
+
+  .contacts .container {
+    padding: 0 1rem;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}

@@ -1,0 +1,53 @@
+#about {
+  .photo-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+
+    .profile-img {
+      width: 255px;
+      height: 255px;
+      border-radius: 50%;
+      border: 10px solid var(--primary-white);
+      transition: all 0.2s ease-in-out;
+      animation: float 4s ease-in-out infinite;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 468px) {
+        width: 100%;
+      }
+    }
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translatey(-30px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+
+  .about-heading {
+    color: var(--primary-white);
+
+    @media all and (max-width: 480px) {
+      text-align: center;
+    }
+  }
+
+  p {
+    color: var(--primary-white);
+    font-size: 21px;
+  }
+}

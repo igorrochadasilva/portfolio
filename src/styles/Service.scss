@@ -1,0 +1,47 @@
+/************************ SERVICES *********************************/
+#services {
+  text-align: center;
+  padding-bottom: 2rem;
+
+  h1 {
+    color: var(--primary-white);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .circle {
+    position: relative;
+    margin: 0.375rem auto;
+    background: var(--primary-pink);
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  .icon {
+    font-size: 1.4rem;
+    color: var(--primary-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .box {
+    height: 16rem;
+    border-bottom: 0.3125rem solid var(--primary-pink);
+    padding: 0.625rem;
+    margin-bottom: 1.875rem;
+    background: var(--primary-white);
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+
+    @media (min-width: 490px) {
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

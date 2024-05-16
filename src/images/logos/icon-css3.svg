@@ -1,0 +1,32 @@
+<svg width="335" height="377" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient y2="0.00001" x2="0.5" y1="1.00001" x1="0.5" id="a">
+   <stop stop-opacity="0" stop-color="#d1d3d4" offset="0.387"/>
+   <stop stop-color="#d1d3d4" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.00001" x2="0.49999" y1="1.00001" x1="0.49999" id="b">
+   <stop stop-opacity="0" stop-color="#d1d3d4" offset="0.387"/>
+   <stop stop-color="#d1d3d4" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.50001" x2="1" y1="0.50001" x1="0" id="c">
+   <stop stop-color="#e8e7e5" offset="0"/>
+   <stop stop-color="#fff" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.5" x2="1" y1="0.5" x1="0" id="d">
+   <stop stop-color="#e8e7e5" offset="0"/>
+   <stop stop-color="#fff" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="null" id="svg_2" fill="#2062af" d="m303.854,340.525l-136.21,36.676l-136.212,-36.676l-31.432,-340.525l335.29,0l-31.436,340.525z"/>
+  <path id="svg_3" fill="#3c9cd7" d="m167.643,27.582l0,320.367l0.308,0.084l110.229,-29.682l25.443,-290.769l-135.98,0z"/>
+  <path id="svg_5" fill="#fff" d="m167.522,112.727l-97.49,40.602l3.233,40.199l94.257,-40.301l100.265,-42.868l4.157,-41.122l-104.422,43.49z"/>
+  <path id="svg_6" fill="url(#a)" d="m70.031,153.329l3.233,40.199l94.257,-40.301l0,-40.5l-97.49,40.602z"/>
+  <path id="svg_7" fill="url(#b)" d="m271.944,69.238l-104.422,43.489l0,40.5l100.265,-42.868l4.157,-41.121z"/>
+  <path id="svg_8" fill="url(#c)" d="m70.181,153.329l3.234,40.199l144.625,0.461l-3.235,53.598l-47.59,13.398l-45.748,-11.551l-2.772,-33.268l-42.508,0l5.545,64.225l85.945,25.412l85.479,-24.951l11.09,-127.523l-194.065,0z"/>
+  <path id="svg_9" opacity="0.05" d="m167.522,153.329l-97.49,0l3.233,40.199l94.257,0.301l0,-40.5zm0,107.528l-0.462,0.129l-45.742,-11.551l-2.772,-33.268l-42.507,0l5.544,64.225l85.939,25.412l0,-44.947z"/>
+  <path id="svg_10" fill="url(#d)" d="m61.252,69.238l210.692,0l-4.157,41.122l-201.453,0l-5.082,-41.122z"/>
+  <path id="svg_11" opacity="0.05" d="m167.522,69.238l-106.27,0l5.082,41.122l101.188,0l0,-41.122z"/>
+ </g>
+</svg>

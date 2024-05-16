@@ -1,0 +1,63 @@
+/************************ Knowledge *********************************/
+#knowledge {
+  padding: 3rem 0;
+
+  h1 {
+    text-align: center;
+    color: var(--primary-white);
+  }
+
+  .cards {
+    margin-top: 4rem;
+
+    .cardBox {
+      border-radius: 10px;
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s all ease-in-out;
+      margin: 20px;
+
+      @media (min-width: 490px) {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &__icon {
+        padding-bottom: 15px;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      &__title p {
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+
+      @media all and (max-width: 1199px) {
+        width: 200px;
+        height: 200px;
+        margin: 10px 10px;
+      }
+
+      @media all and (max-width: 490px) {
+        width: 180px;
+        height: 180px;
+        margin: 5px;
+
+        img {
+          width: 80px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

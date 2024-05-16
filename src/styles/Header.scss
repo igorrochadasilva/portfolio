@@ -1,0 +1,54 @@
+#navbar {
+  background-color: var(--primary-dark) !important;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-brand {
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 4rem;
+    display: flex !important;
+    align-items: center;
+
+    figure {
+      margin: auto;
+    }
+  }
+
+  ul li {
+    text-transform: uppercase;
+
+    a {
+      margin-right: 0.75rem;
+      margin-left: 0.75rem;
+      color: var(--primary-white) !important;
+      border-top: 0.1875rem solid var(--primary-dark);
+      font-size: 0.8rem;
+      letter-spacing: 0.0375rem;
+      cursor: pointer;
+
+      &.active,
+      &:focus,
+      &:hover {
+        border-top: 0.1875rem solid var(--primary-pink);
+      }
+    }
+  }
+
+  .navbar-toggler svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}

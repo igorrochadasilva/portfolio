@@ -1,0 +1,129 @@
+{
+  "Navbar": {
+    "text1": "Who I am",
+    "text2": "Knowledge",
+    "text3": "Services",
+    "text4": "Projects",
+    "text5": "Contact"
+  },
+  "Home": {
+    "title": "Hello, I am",   
+    "typedString1": "Web Developer",
+    "typedString2": "Vtex Developer", 
+    "typedString3": "WordPress Developer", 
+    "typedString4": "React Developer",       
+    "button": "contact"
+  },
+  "AboutMe": {
+    "title": "Who I am",
+    "text": "My name is Igor Rocha, I am Front End Developer, I develop websites, blogs and ecommerces of high quality, with a focus on performace, responsiveness, animations and SEO. I am always looking to update myself with new technologies that emerge, so as to always innovate and be more efficient."
+  },
+  "Services": {
+    "title": "Services",
+    "box1": {
+      "title": "Web Sites",
+      "text": "Creation of responsive websites, landing pages, blogs, dynamic sites."
+    },
+    "box2": {
+      "title": "E-commerce",
+      "text": "Creation and development of customized virtual stores."
+    },
+    "box3": {
+      "title": "Wordpress",
+      "text": "Template creation and customization, plugin fixes and updates."
+    },
+    "box4": {
+      "title": "Email Marketing",
+      "text": "Development of Email Marketing and customized templates."
+    }
+  },
+  "Experiences": {
+    "title": "Experiences",
+    "experiece1": {
+      "year": "2018-2019",
+      "text": [
+      "Development and maintenance of pages in Wordpress or Vtex for Phooto.",
+      "Development and maintenance of E-mail Marketing.",
+      "Development of codes for landing page changes according to parameters received.",
+      "Implementation of SEO best practices."
+      ]
+    },
+    "experiece2": {
+      "year": "2019-2019",
+      "text": [
+        "Development of e-commerce on the VTEX platform for Katmandu, Vivenda do camarão, Caído Pneus using HTML5, SCSS, Javascript, jQuery.",
+        "Development of new features and code refactoring.",
+        "Process automation using Postman Collection Runner.",
+        "Development and maintenance of websites with Wordpress for São Cristóvão, Saesp and Bardal.",
+        "Performance improvement following best practices pointed by Google Pagespeed.",
+        "Translated with www.DeepL.com/Translator (free version)."
+      ]
+    },
+    "experiece3": {
+      "year": "2019-2021",
+      "text":[
+        "Development of e-commerce on the VTEX platform for Rihappy.com.br using HTML5, SCSS, Javascript, jQuery, Gulp, Babel, Node.js, Webpack, React, Typescript and Graphql.",
+        "Development of new features and code refactoring.",
+        "Process automation using Postman Collection Runner and Node.js.",
+        "Versioning with Bitbucket and Gitlab.",
+        "Scrum methodology.", 
+        "Feature testing, merge and deploy to production."
+      ]
+    }
+  },
+  "Portfolios": {
+    "title": "Portfolio",
+    "project": "Project",
+    "project1": {      
+      "text": "Rihappy toy store."
+    },
+    "project2": {
+      "text": "Vivenda do Camarão Store."
+    },
+     "project3": {      
+      "text": "Phooto Store."
+    },
+     "project4": {      
+      "text": "Katmandu Store."
+    },
+     "project5": {      
+      "text": "SBED website"
+    },
+     "project6": {      
+      "text": "São Cristovão website."
+    },
+     "project7": {      
+      "text": "Caido Pneus website."
+    },
+     "project8": {      
+      "text": "Bardahl website."
+    }
+  },
+  "Knowledges": {
+    "title": "Knowledge"
+  },
+  "Contacts": {
+    "title": "CONTACT",
+    "text": "Fill out the form and describe your project needs and I will contact you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "nameRequired":"Please enter your name",
+      "nameMsg":"Enter a name less than 20 characters long",
+      "phone": "Phone",
+      "phoneRequired":"Please add your phone number",
+      "phoneMsg": "Invalid phone number",
+      "email": "Email",
+      "emailRequired": "Please provide your email address",
+      "emailMsg": "Invalid Email",
+      "sub": "Subject",
+      "subRequired": "OOPS, you forgot to add the subject",
+      "description": "Briefly describe your project ...",
+      "descriptionRequired": "Briefly describe your project requirements ...",
+      "formSucess": "Form sent successfully! I will be contacting you soon, thank you!"
+    },
+    "button":"Send"
+  },
+  "Footer": {
+    "city": "City"
+  }
+}
