@@ -29,6 +29,12 @@
       z-index: 10;
       .portfolio-modal-body-content {
         padding: 20px;
+
+        @media (max-width: 570px) {
+          p {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
@@ -64,6 +70,16 @@
       width: 30px;
     }
   }
+
+  /*------------ MEDIA ------------------*/
+  @media (max-width: 768px) {
+    .portfolio-image-box {
+      margin: 0;
+      width: 100%;
+      max-width: max-content;
+      padding: 0;
+    }
+  }
 }
 
 /*------------ OVERFLOW BOX ------------------*/
@@ -80,6 +96,10 @@
 /*------------ OVERFLOW BOX ------------------*/
 .portfolio-modal-body-image {
   width: 45rem;
+
+  @media (max-width: 570px) {
+    width: 100%;
+  }
 }
 
 .hyper-link {
@@ -91,29 +111,10 @@
   color: var(--primary-red);
 }
 
-/*------------ MEDIA ------------------*/
-@media (max-width: 768px) {
-  .portfolio-image-box {
-    width: 100%;
-  }
-}
-
-@media (max-height: 570px) {
+@media (max-width: 570px) {
   .image-box-wrapper {
     height: 100%;
-
-    .portfolio-image-box {
-      width: 50%;
-    }
-  }
-}
-
-@media (max-height: 280px) {
-  .image-box-wrapper {
-    height: 90%;
-
-    .portfolio-image-box {
-      width: 30%;
-    }
+    display: flex;
+    justify-content: center;
   }
 }

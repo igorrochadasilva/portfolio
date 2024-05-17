@@ -2,8 +2,6 @@
 import { IProject } from '.'
 import { iconSearch } from '../icons/Icons'
 
-import LazyLoad from 'react-lazyload'
-
 interface IImages {
   image: string
   text: string
@@ -23,9 +21,7 @@ const BoxImage: React.FC<IImages> = ({ image, text, link, handleModalData }) => 
     }
   >
     <figure>
-      <LazyLoad height={120}>
-        <img className="portfolio-image" src={image} alt={text} width="240px" height="120px" />
-      </LazyLoad>
+      <img className="portfolio-image" src={image} alt={text} width="240px" height="120px" />
 
       <div className="overflow"></div>
       {iconSearch}

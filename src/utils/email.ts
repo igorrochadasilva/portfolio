@@ -1,4 +1,5 @@
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
+
 import { TFormData } from '../components/Contacts'
 
 const env = import.meta.env

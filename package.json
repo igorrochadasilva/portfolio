@@ -10,17 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
     "classnames": "^2.5.1",
-    "emailjs": "^4.0.3",
-    "emailjs-com": "^3.2.0",
     "react": "^18.2.0",
     "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.4",
-    "react-lazyload": "^3.2.1",
-    "react-popupbox": "^2.0.9",
     "react-typed": "^2.0.12",
     "sass": "^1.77.1",
     "uuid": "^9.0.1"
@@ -28,7 +25,6 @@
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
-    "@types/react-lazyload": "^3.2.3",
     "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
     "@typescript-eslint/parser": "^7.2.0",
