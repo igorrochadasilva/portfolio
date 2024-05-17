@@ -1,5 +1,6 @@
 // FONTAWESOME IMPORTS
 import { IProject } from '.'
+import { getPortfolioAssetSrc } from '../../utils/getPortfolioAssets'
 import { iconSearch } from '../icons/Icons'
 
 interface IImages {
@@ -22,7 +23,7 @@ const BoxImage: React.FC<IImages> = ({ image, text, link, handleModalData }) => 
       }
     >
       <figure>
-        <img className="portfolio-image" src={image} alt={text} width="240px" height="120px" />
+        <img className="portfolio-image" src={getPortfolioAssetSrc(image)} alt={text} width="240px" height="120px" />
 
         <div className="overflow"></div>
         {iconSearch}

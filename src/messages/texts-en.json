@@ -77,42 +77,42 @@
       {
         "text": "Rihappy toy store.",
         "link": "https://rihappy.com.br",
-        "image": "/src/assets/rihappy-home.webp"
+        "image": "rihappy"
       },
       {
         "text": "Vivenda do Camarão Store.",
         "link": "https://www.emporiovivendadocamarao.com.br/",
-        "image": "/src/assets/vivenda-do-caramao-home.webp"
+        "image": "vivenda-do-caramao"
       },
       {
         "text": "Phooto Store.",
         "link": "https://www.phooto.com.br/",
-        "image": "/src/assets/phooto-home.webp"
+        "image": "phooto"
       },
       {
         "text": "Katmandu Store.",
         "link": "https://www.katmandu.com.br/",
-        "image": "/src/assets/katmandu-home.webp"
+        "image": "katmandu"
       },
       {
         "text": "SBED website",
         "link": "https://sbed.org.br",
-        "image": "/src/assets/sbed-home.webp"
+        "image": "sbed"
       },
       {
         "text": "São Cristovão website.",
         "link": "https://www.saocristovao.com.br/",
-        "image": "/src/assets/sao-cristovao/home.webp"
+        "image": "sao-cristovao"
       },
       {
         "text": "Caido Pneus website.",
         "link": "https://www.caiadopneus.com.br/",
-        "image": "/src/assets/caiado-pneus-home.webp"
+        "image": "caiado-pneus"
       },
       {
         "text": "Bardahl website.",
         "link": "https://bardahl.com.br/",
-        "image": "/src/assets/bardahl-home.webp"
+        "image": "bardahl"
       }
     ]
   },
@@ -121,85 +121,85 @@
     "list": [
       {
         "text": "React",
-        "image": "/src/assets/icon-react.svg"
+        "image": "react"
       },
       {
         "text": "Html5",
-        "image": "/src/assets/icon-html5.svg"
+        "image": "html5"
       },
       {
         "text": "Javascript",
-        "image": "/src/assets/icon-javascript.svg"
+        "image": "javascript"
       },
       {
         "text": "Css3",
-        "image": "/src/assets/icon-css3.svg"
+        "image": "css3"
       },
 
       {
         "text": "Jquery",
-        "image": "/src/assets/icon-jquery.svg"
+        "image": "jquery"
       },
       {
         "text": "Git",
-        "image": "/src/assets/icon-git.svg"
+        "image": "git"
       },
       {
         "text": "Sass",
-        "image": "/src/assets/icon-sass.svg"
+        "image": "sass"
       },
       {
         "text": "Typescript",
-        "image": "/src/assets/icon-typescript.svg"
+        "image": "typescript"
       },
 
       {
         "text": "Vtex",
-        "image": "/src/assets/icon-vtex.svg"
+        "image": "vtex"
       },
       {
         "text": "Webpack",
-        "image": "/src/assets/icon-webpack.svg"
+        "image": "webpack"
       },
       {
         "text": "Redux",
-        "image": "/src/assets/icon-redux.svg"
+        "image": "redux"
       },
       {
         "text": "Styled Component",
-        "image": "/src/assets/icon-styled-component.svg"
+        "image": "styled-component"
       },
       {
         "text": "Next",
-        "image": "/src/assets/icon-next.svg"
+        "image": "next"
       },
       {
         "text": "Vite",
-        "image": "/src/assets/icon-vite.svg"
+        "image": "vite"
       },
       {
         "text": "Graphql",
-        "image": "/src/assets/icon-graphql.svg"
+        "image": "graphql"
       },
       {
         "text": "Prisma",
-        "image": "/src/assets/icon-prisma.svg"
+        "image": "prisma"
       },
       {
         "text": "PostgreSql",
-        "image": "/src/assets/icon-postgresql.svg"
+        "image": "postgresql"
       },
       {
         "text": "Nest",
-        "image": "/src/assets/icon-nest.svg"
+        "image": "nest"
       },
       {
         "text": "Node",
-        "image": "/src/assets/icon-node.svg"
+        "image": "node"
       },
       {
         "text": "Jest",
-        "image": "/src/assets/icon-jest.svg"
+        "image": "jest"
       }
     ]
   },
