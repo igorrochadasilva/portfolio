@@ -1,30 +1,3 @@
-# React + TypeScript + Vite
+# Portfolio FullStack Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Hello! I'm Igor Rocha, a fullstack developer with five years of experience. My passion for technology has led me to web development, where I create a variety of digital products. On the front end, I use React.js, TypeScript, Tailwind CSS, Sass, and Vite or Next.js. With Apollo Client and GraphQL, I build dynamic and efficient interfaces, prioritizing usability. On the backend, I rely on Node.js and NestJS, combined with PostgreSQL, TypeORM, or Prisma to ensure secure data storage. I master Docker for app portability and consistency. I develop everything from websites and blogs to e-commerce sites, email marketing, dashboards, and internal systems, offering ongoing maintenance and support. For code quality, I use Jest and Vitest for automated testing, ensuring product stability and reliability. I'm ready to turn your ideas into digital reality!

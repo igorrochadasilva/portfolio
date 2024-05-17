@@ -1,4 +1,3 @@
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 interface IKnowledgeProps {
   icon: string
   technology: string
