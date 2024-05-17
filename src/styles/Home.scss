@@ -3,16 +3,16 @@
 .home-wraper {
   position: relative;
   height: 100vh;
-  
-    &::after {
-        content: " ";
-        display: block;
-        height: 100%;
-        background-position: top;
-        background-image: url(../../src/images/backgrounc-section-1.svg);
-        background-repeat: no-repeat;
-        filter: invert(16%) sepia(89%) saturate(4331%) hue-rotate(329deg) brightness(87%) contrast(83%);
-    }        
+
+  &::after {
+    content: ' ';
+    display: block;
+    height: 100%;
+    background-position: top;
+    background-image: url(../../src/assets/backgrounc-section-1.svg);
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(89%) saturate(4331%) hue-rotate(329deg) brightness(87%) contrast(83%);
+  }
 }
 
 .main-info {
@@ -27,15 +27,15 @@
   align-items: center;
   text-align: center;
   z-index: 1;
-  
-    h1{
-        color: var(--primary-white);
-        span {
-            color: var(--primary-white);        
-            font-size: 1.5rem;
-            text-transform: initial;
-        }
-    } 
+
+  h1 {
+    color: var(--primary-white);
+    span {
+      color: var(--primary-white);
+      font-size: 1.5rem;
+      text-transform: initial;
+    }
+  }
 }
 
 /*-------- TYPED TEXT ---------------*/

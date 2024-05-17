@@ -77,42 +77,42 @@
       {
         "text": "Rihappy toy store.",
         "link": "https://rihappy.com.br",
-        "image": "/src/images/projects/rihappy/home.webp"
+        "image": "/src/assets/projects/rihappy/home.webp"
       },
       {
         "text": "Vivenda do Camarão Store.",
         "link": "https://www.emporiovivendadocamarao.com.br/",
-        "image": "/src/images/projects/vivenda-do-caramao/home.webp"
+        "image": "/src/assets/projects/vivenda-do-caramao/home.webp"
       },
       {
         "text": "Phooto Store.",
         "link": "https://www.phooto.com.br/",
-        "image": "/src/images/projects/phooto/home.webp"
+        "image": "/src/assets/projects/phooto/home.webp"
       },
       {
         "text": "Katmandu Store.",
         "link": "https://www.katmandu.com.br/",
-        "image": "/src/images/projects/katmandu/home.webp"
+        "image": "/src/assets/projects/katmandu/home.webp"
       },
       {
         "text": "SBED website",
         "link": "https://sbed.org.br",
-        "image": "/src/images/projects/sbed/home.webp"
+        "image": "/src/assets/projects/sbed/home.webp"
       },
       {
         "text": "São Cristovão website.",
         "link": "https://sbed.org.br",
-        "image": "/src/images/projects/sao-cristovao/home.webp"
+        "image": "/src/assets/projects/sao-cristovao/home.webp"
       },
       {
         "text": "Caido Pneus website.",
         "link": "https://www.caiadopneus.com.br/",
-        "image": "/src/images/projects/caiado-pneus/home.webp"
+        "image": "/src/assets/projects/caiado-pneus/home.webp"
       },
       {
         "text": "Bardahl website.",
         "link": "https://bardahl.com.br/",
-        "image": "/src/images/projects/bardahl/home.webp"
+        "image": "/src/assets/projects/bardahl/home.webp"
       }
     ]
   },
@@ -121,85 +121,85 @@
     "list": [
       {
         "text": "React",
-        "image": "/src/images/logos/icon-react.svg"
+        "image": "/src/assets/logos/icon-react.svg"
       },
       {
         "text": "Html5",
-        "image": "/src/images/logos/icon-html5.svg"
+        "image": "/src/assets/logos/icon-html5.svg"
       },
       {
         "text": "Javascript",
-        "image": "/src/images/logos/icon-javascript.svg"
+        "image": "/src/assets/logos/icon-javascript.svg"
       },
       {
         "text": "Css3",
-        "image": "/src/images/logos/icon-css3.svg"
+        "image": "/src/assets/logos/icon-css3.svg"
       },
 
       {
         "text": "Jquery",
-        "image": "/src/images/logos/icon-jquery.svg"
+        "image": "/src/assets/logos/icon-jquery.svg"
       },
       {
         "text": "Git",
-        "image": "/src/images/logos/icon-git.svg"
+        "image": "/src/assets/logos/icon-git.svg"
       },
       {
         "text": "Sass",
-        "image": "/src/images/logos/icon-sass.svg"
+        "image": "/src/assets/logos/icon-sass.svg"
       },
       {
         "text": "Typescript",
-        "image": "/src/images/logos/icon-typescript.svg"
+        "image": "/src/assets/logos/icon-typescript.svg"
       },
 
       {
         "text": "Vtex",
-        "image": "/src/images/logos/icon-vtex.svg"
+        "image": "/src/assets/logos/icon-vtex.svg"
       },
       {
         "text": "Webpack",
-        "image": "/src/images/logos/icon-webpack.svg"
+        "image": "/src/assets/logos/icon-webpack.svg"
       },
       {
         "text": "Redux",
-        "image": "/src/images/logos/icon-redux.svg"
+        "image": "/src/assets/logos/icon-redux.svg"
       },
       {
         "text": "Styled Component",
-        "image": "/src/images/logos/icon-styled-component.svg"
+        "image": "/src/assets/logos/icon-styled-component.svg"
       },
       {
         "text": "Next",
-        "image": "/src/images/logos/icon-next.svg"
+        "image": "/src/assets/logos/icon-next.svg"
       },
       {
         "text": "Vite",
-        "image": "/src/images/logos/icon-vite.svg"
+        "image": "/src/assets/logos/icon-vite.svg"
       },
       {
         "text": "Graphql",
-        "image": "/src/images/logos/icon-graphql.svg"
+        "image": "/src/assets/logos/icon-graphql.svg"
       },
       {
         "text": "Prisma",
-        "image": "/src/images/logos/icon-prisma.svg"
+        "image": "/src/assets/logos/icon-prisma.svg"
       },
       {
         "text": "PostgreSql",
-        "image": "/src/images/logos/icon-postgresql.svg"
+        "image": "/src/assets/logos/icon-postgresql.svg"
       },
       {
         "text": "Nest",
-        "image": "/src/images/logos/icon-nest.svg"
+        "image": "/src/assets/logos/icon-nest.svg"
       },
       {
         "text": "Node",
-        "image": "/src/images/logos/icon-node.svg"
+        "image": "/src/assets/logos/icon-node.svg"
       },
       {
         "text": "Jest",
-        "image": "/src/images/logos/icon-jest.svg"
+        "image": "/src/assets/logos/icon-jest.svg"
       }
     ]
   },
