@@ -1,5 +1,3 @@
-import React from 'react'
-// import author from '../../assets/me.jpg';
 import iconMe from '../../assets/iconMe.jpg'
 
 const Picture: React.FC = () => (

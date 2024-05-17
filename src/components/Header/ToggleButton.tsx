@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import classNames from 'classnames'
-import iconUsa from '../../assets/flags/eua.png'
-import iconBra from '../../assets/flags/brasil.png'
+import iconUsa from '../../assets/eua.png'
+import iconBra from '../../assets/brasil.png'
 
 import { UserContext } from '../context/AppContext'
 import messages_br from '../../messages/texts-pt-br.json'

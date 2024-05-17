@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import logo from '../../assets/logos/logo.png'
+import logo from '../../assets/logo.png'
 
 import { iconMenu } from '../icons/Icons'
 
