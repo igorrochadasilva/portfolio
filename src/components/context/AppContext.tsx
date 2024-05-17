@@ -44,5 +44,4 @@ const UserContextProvider = ({ children }: IUserContextProvider) => {
   )
 }
 
-export { UserContextProvider }
-export default UserContext
+export { UserContextProvider, UserContext }

@@ -46,6 +46,13 @@
     }
   }
 
+  .about-text {
+    font-size: 16px;
+    @media all and (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+
   p {
     color: var(--primary-white);
     font-size: 21px;

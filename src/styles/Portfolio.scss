@@ -6,9 +6,42 @@
   h1 {
     color: var(--primary-white);
   }
+  .portfolio-modal {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .portfolio-modal-bg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.9;
+      background-color: #000000;
+    }
+    .portfolio-modal-body {
+      position: fixed;
+      background-color: #fff;
+      z-index: 10;
+      .portfolio-modal-body-content {
+        padding: 20px;
+
+        @media (max-width: 570px) {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
   .portfolio-image-box {
     position: relative;
     margin: 1rem;
+    max-width: 15rem;
 
     &:hover .overflow {
       opacity: 60%;
@@ -24,7 +57,6 @@
     .portfolio-image {
       width: 15rem;
       border: 4px solid var(--primary-white);
-      width: 100%;
       height: 120px;
     }
 
@@ -38,8 +70,17 @@
       width: 30px;
     }
   }
-}
 
+  /*------------ MEDIA ------------------*/
+  @media (max-width: 768px) {
+    .portfolio-image-box {
+      margin: 0;
+      width: 100%;
+      max-width: max-content;
+      padding: 0;
+    }
+  }
+}
 
 /*------------ OVERFLOW BOX ------------------*/
 .overflow {
@@ -53,9 +94,12 @@
 }
 
 /*------------ OVERFLOW BOX ------------------*/
-.portfolio-image-popupbox {
+.portfolio-modal-body-image {
   width: 45rem;
-  padding: 0 0.5rem;
+
+  @media (max-width: 570px) {
+    width: 100%;
+  }
 }
 
 .hyper-link {
@@ -67,29 +111,10 @@
   color: var(--primary-red);
 }
 
-/*------------ MEDIA ------------------*/
-@media (max-width: 768px) {
-  .portfolio-image-popupbox {
-    width: 100%;
-  }
-}
-
-@media (max-height: 570px) {
-  .popupbox-wrapper {
+@media (max-width: 570px) {
+  .image-box-wrapper {
     height: 100%;
-
-    .portfolio-image-popupbox {
-      width: 50%;
-    }
-  }
-}
-
-@media (max-height: 280px) {
-  .popupbox-wrapper {
-    height: 90%;
-
-    .portfolio-image-popupbox {
-      width: 30%;
-    }
+    display: flex;
+    justify-content: center;
   }
 }

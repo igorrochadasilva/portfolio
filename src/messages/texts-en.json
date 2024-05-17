@@ -7,34 +7,33 @@
     "text5": "Contact"
   },
   "Home": {
-    "title": "Hello, I am",   
-    "typedString1": "Web Developer",
-    "typedString2": "Vtex Developer", 
-    "typedString3": "WordPress Developer", 
-    "typedString4": "React Developer",       
+    "title": "Hello, I am",
+    "typedString1": "FullStack Developer",
+    "typedString2": "Vtex Developer",
+    "typedString3": "React Developer",
     "button": "contact"
   },
   "AboutMe": {
     "title": "Who I am",
-    "text": "My name is Igor Rocha, I am Front End Developer, I develop websites, blogs and ecommerces of high quality, with a focus on performace, responsiveness, animations and SEO. I am always looking to update myself with new technologies that emerge, so as to always innovate and be more efficient."
+    "text": "Hello! I'm Igor Rocha, a fullstack developer with five years of experience. My passion for technology has led me to web development, where I create a variety of digital products. On the front end, I use React.js, TypeScript, Tailwind CSS, Sass, and Vite or Next.js. With Apollo Client and GraphQL, I build dynamic and efficient interfaces, prioritizing usability. On the backend, I rely on Node.js and NestJS, combined with PostgreSQL, TypeORM, or Prisma to ensure secure data storage. I master Docker for app portability and consistency. I develop everything from websites and blogs to e-commerce sites, email marketing, dashboards, and internal systems, offering ongoing maintenance and support. For code quality, I use Jest and Vitest for automated testing, ensuring product stability and reliability. I'm ready to turn your ideas into digital reality!"
   },
   "Services": {
     "title": "Services",
     "box1": {
-      "title": "Web Sites",
-      "text": "Creation of responsive websites, landing pages, blogs, dynamic sites."
+      "title": "Websites e Blogs",
+      "text": "Creation of custom websites and blogs."
     },
     "box2": {
       "title": "E-commerce",
-      "text": "Creation and development of customized virtual stores."
+      "text": "Building robust and scalable e-commerce platforms."
     },
     "box3": {
-      "title": "Wordpress",
-      "text": "Template creation and customization, plugin fixes and updates."
+      "title": "Dashboards",
+      "text": "Development of custom dashboards and data visualizations."
     },
     "box4": {
-      "title": "Email Marketing",
-      "text": "Development of Email Marketing and customized templates."
+      "title": "Management Systems",
+      "text": "Creation of custom systems for project management."
     }
   },
   "Experiences": {
@@ -42,10 +41,10 @@
     "experiece1": {
       "year": "2018-2019",
       "text": [
-      "Development and maintenance of pages in Wordpress or Vtex for Phooto.",
-      "Development and maintenance of E-mail Marketing.",
-      "Development of codes for landing page changes according to parameters received.",
-      "Implementation of SEO best practices."
+        "Development and maintenance of pages in Wordpress or Vtex for Phooto.",
+        "Development and maintenance of E-mail Marketing.",
+        "Development of codes for landing page changes according to parameters received.",
+        "Implementation of SEO best practices."
       ]
     },
     "experiece2": {
@@ -60,13 +59,13 @@
       ]
     },
     "experiece3": {
-      "year": "2019-2021",
-      "text":[
+      "year": "2019-2024",
+      "text": [
         "Development of e-commerce on the VTEX platform for Rihappy.com.br using HTML5, SCSS, Javascript, jQuery, Gulp, Babel, Node.js, Webpack, React, Typescript and Graphql.",
         "Development of new features and code refactoring.",
         "Process automation using Postman Collection Runner and Node.js.",
         "Versioning with Bitbucket and Gitlab.",
-        "Scrum methodology.", 
+        "Scrum methodology.",
         "Feature testing, merge and deploy to production."
       ]
     }
@@ -74,43 +73,145 @@
   "Portfolios": {
     "title": "Portfolio",
     "project": "Project",
-    "project1": {      
-      "text": "Rihappy toy store."
-    },
-    "project2": {
-      "text": "Vivenda do Camarão Store."
-    },
-     "project3": {      
-      "text": "Phooto Store."
-    },
-     "project4": {      
-      "text": "Katmandu Store."
-    },
-     "project5": {      
-      "text": "SBED website"
-    },
-     "project6": {      
-      "text": "São Cristovão website."
-    },
-     "project7": {      
-      "text": "Caido Pneus website."
-    },
-     "project8": {      
-      "text": "Bardahl website."
-    }
+    "projects": [
+      {
+        "text": "Rihappy toy store.",
+        "link": "https://rihappy.com.br",
+        "image": "/src/images/projects/rihappy/home.webp"
+      },
+      {
+        "text": "Vivenda do Camarão Store.",
+        "link": "https://www.emporiovivendadocamarao.com.br/",
+        "image": "/src/images/projects/vivenda-do-caramao/home.webp"
+      },
+      {
+        "text": "Phooto Store.",
+        "link": "https://www.phooto.com.br/",
+        "image": "/src/images/projects/phooto/home.webp"
+      },
+      {
+        "text": "Katmandu Store.",
+        "link": "https://www.katmandu.com.br/",
+        "image": "/src/images/projects/katmandu/home.webp"
+      },
+      {
+        "text": "SBED website",
+        "link": "https://sbed.org.br",
+        "image": "/src/images/projects/sbed/home.webp"
+      },
+      {
+        "text": "São Cristovão website.",
+        "link": "https://sbed.org.br",
+        "image": "/src/images/projects/sao-cristovao/home.webp"
+      },
+      {
+        "text": "Caido Pneus website.",
+        "link": "https://www.caiadopneus.com.br/",
+        "image": "/src/images/projects/caiado-pneus/home.webp"
+      },
+      {
+        "text": "Bardahl website.",
+        "link": "https://bardahl.com.br/",
+        "image": "/src/images/projects/bardahl/home.webp"
+      }
+    ]
   },
   "Knowledges": {
-    "title": "Knowledge"
+    "title": "Knowledge",
+    "list": [
+      {
+        "text": "React",
+        "image": "/src/images/logos/icon-react.svg"
+      },
+      {
+        "text": "Html5",
+        "image": "/src/images/logos/icon-html5.svg"
+      },
+      {
+        "text": "Javascript",
+        "image": "/src/images/logos/icon-javascript.svg"
+      },
+      {
+        "text": "Css3",
+        "image": "/src/images/logos/icon-css3.svg"
+      },
+
+      {
+        "text": "Jquery",
+        "image": "/src/images/logos/icon-jquery.svg"
+      },
+      {
+        "text": "Git",
+        "image": "/src/images/logos/icon-git.svg"
+      },
+      {
+        "text": "Sass",
+        "image": "/src/images/logos/icon-sass.svg"
+      },
+      {
+        "text": "Typescript",
+        "image": "/src/images/logos/icon-typescript.svg"
+      },
+
+      {
+        "text": "Vtex",
+        "image": "/src/images/logos/icon-vtex.svg"
+      },
+      {
+        "text": "Webpack",
+        "image": "/src/images/logos/icon-webpack.svg"
+      },
+      {
+        "text": "Redux",
+        "image": "/src/images/logos/icon-redux.svg"
+      },
+      {
+        "text": "Styled Component",
+        "image": "/src/images/logos/icon-styled-component.svg"
+      },
+      {
+        "text": "Next",
+        "image": "/src/images/logos/icon-next.svg"
+      },
+      {
+        "text": "Vite",
+        "image": "/src/images/logos/icon-vite.svg"
+      },
+      {
+        "text": "Graphql",
+        "image": "/src/images/logos/icon-graphql.svg"
+      },
+      {
+        "text": "Prisma",
+        "image": "/src/images/logos/icon-prisma.svg"
+      },
+      {
+        "text": "PostgreSql",
+        "image": "/src/images/logos/icon-postgresql.svg"
+      },
+      {
+        "text": "Nest",
+        "image": "/src/images/logos/icon-nest.svg"
+      },
+      {
+        "text": "Node",
+        "image": "/src/images/logos/icon-node.svg"
+      },
+      {
+        "text": "Jest",
+        "image": "/src/images/logos/icon-jest.svg"
+      }
+    ]
   },
   "Contacts": {
     "title": "CONTACT",
     "text": "Fill out the form and describe your project needs and I will contact you as soon as possible.",
     "form": {
       "name": "Name",
-      "nameRequired":"Please enter your name",
-      "nameMsg":"Enter a name less than 20 characters long",
+      "nameRequired": "Please enter your name",
+      "nameMsg": "Enter a name less than 20 characters long",
       "phone": "Phone",
-      "phoneRequired":"Please add your phone number",
+      "phoneRequired": "Please add your phone number",
       "phoneMsg": "Invalid phone number",
       "email": "Email",
       "emailRequired": "Please provide your email address",
@@ -119,9 +220,9 @@
       "subRequired": "OOPS, you forgot to add the subject",
       "description": "Briefly describe your project ...",
       "descriptionRequired": "Briefly describe your project requirements ...",
-      "formSucess": "Form sent successfully! I will be contacting you soon, thank you!"
+      "formSuccess": "Form sent successfully! I will be contacting you soon, thank you!"
     },
-    "button":"Send"
+    "button": "Send"
   },
   "Footer": {
     "city": "City"
