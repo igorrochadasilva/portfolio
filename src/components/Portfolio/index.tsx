@@ -5,6 +5,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import BoxImage from './BoxImage'
 import { UserContext } from '../context/AppContext'
 import Modal from './Modal'
+import { getPortfolioAssetSrc } from '../../utils/getPortfolioAssets'
 
 export interface IProject {
   text: string
@@ -54,7 +55,7 @@ const Portfolio = () => {
       {showModal ? (
         <Modal
           imgAlt={modalData.text}
-          imgSrc={modalData.image}
+          imgSrc={getPortfolioAssetSrc(modalData.image)}
           link={modalData.link}
           projectText={modalData.text}
           projectTitle={project}

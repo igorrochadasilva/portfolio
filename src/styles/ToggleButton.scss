@@ -13,6 +13,56 @@
   }
 }
 
+// Modern Toggle Button Styles - Compact
+.nav-item.language-toggle,
+.mobile-nav-item.language-toggle {
+  .main-wrg-toggle {
+    height: auto;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .wrg-toggle-container {
+    width: 32px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .wrg-toggle-circle {
+    width: 14px;
+    height: 14px;
+    top: 0px;
+    left: 0px;
+    background-color: var(--primary-white);
+    border: none;
+  }
+
+  .wrg-toggle-check {
+    left: 4px;
+  }
+
+  .wrg-toggle-uncheck {
+    right: 4px;
+  }
+
+  .wrg-toggle--checked .wrg-toggle-circle {
+    left: 16px;
+  }
+
+  .wrg-toggle-check span,
+  .wrg-toggle-uncheck span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .wrg-toggle-check img,
+  .wrg-toggle-uncheck img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 .wrg-toggle {
   touch-action: pan-x;
   display: inline-block;
