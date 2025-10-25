@@ -7,9 +7,9 @@ const Home: React.FC = () => {
   const MHome = context.state.messages.Home
 
   return (
-    <section id="home" className="home-wraper">
+    <section id="home" className="home-wraper" role="main" aria-labelledby="home-title">
       <div className="main-info">
-        <h1>
+        <h1 id="home-title">
           <span>{MHome.title} </span>Igor Rocha.
         </h1>
         {MHome ? (
@@ -19,10 +19,11 @@ const Home: React.FC = () => {
             typeSpeed={60}
             backSpeed={60}
             loop
+            aria-label="Especialidades: Desenvolvedor FullStack, Desenvolvedor VTEX, Desenvolvedor React"
           />
         ) : null}
 
-        <a className="btn-main-offer" href="#contacts">
+        <a className="btn-main-offer" href="#contacts" aria-label="Ir para seção de contato">
           {MHome.button}
         </a>
       </div>

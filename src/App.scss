@@ -39,6 +39,44 @@ body {
   background: var(--primary-bg-black) !important;
 }
 
+// Accessibility styles
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Focus styles for better accessibility
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid var(--primary-pink);
+  outline-offset: 2px;
+}
+
+// Skip link for keyboard navigation
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--primary-pink);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  z-index: 1000;
+  
+  &:focus {
+    top: 6px;
+  }
+}
+
 // Global styles
 .dot {
   color: var(--primary-pink);

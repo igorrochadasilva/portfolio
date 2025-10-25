@@ -15,12 +15,12 @@ const Header: React.FC = () => {
   const openMenu = () => SetMenu(!menu)
 
   return (
-    <header>
-      <nav id="navbar" className="navbar navbar-expand-lg navbar-light">
+    <header role="banner">
+      <nav id="navbar" className="navbar navbar-expand-lg navbar-light" role="navigation" aria-label="Navegação principal">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/" aria-label="Igor Rocha - Página inicial">
             <figure>
-              <img className="logo" src={logo} alt="logo..." loading="lazy" width="84px" height="59px" />
+              <img className="logo" src={logo} alt="Logo Igor Rocha - Desenvolvedor FullStack" loading="lazy" width="84px" height="59px" />
             </figure>
           </a>
           <button
@@ -29,42 +29,42 @@ const Header: React.FC = () => {
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-expanded={menu}
+            aria-label="Alternar menu de navegação"
             onClick={openMenu}
           >
             {iconMenu}
           </button>
 
           <div className={`collapse navbar-collapse  ${menu && `show`}`} id="navbarSupportedContent">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#about">
+            <ul className="navbar-nav" role="menubar">
+              <li className="nav-item" role="none">
+                <a className="nav-link" href="#about" role="menuitem">
                   {MNavbar.text1}
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#knowledge">
+              <li className="nav-item" role="none">
+                <a className="nav-link" href="#knowledge" role="menuitem">
                   {MNavbar.text2}
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#services">
+              <li className="nav-item" role="none">
+                <a className="nav-link" href="#services" role="menuitem">
                   {MNavbar.text3}
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#portfolio">
+              <li className="nav-item" role="none">
+                <a className="nav-link" href="#portfolio" role="menuitem">
                   {MNavbar.text4}
                 </a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#contacts">
+              <li className="nav-item" role="none">
+                <a className="nav-link" href="#contacts" role="menuitem">
                   {MNavbar.text5}
                 </a>
               </li>
-              <li>
+              <li role="none">
                 <div className="main-wrg-toggle">
                   <ToggleButton />
                 </div>

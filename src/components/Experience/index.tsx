@@ -11,7 +11,7 @@ const Experiences: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false)
 
   const windowWidth = () => {
-    let screenWidth = window.innerWidth
+    const screenWidth = window.innerWidth
 
     screenWidth < 768 ? setIsMobile(true) : setIsMobile(false)
   }

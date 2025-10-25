@@ -11,20 +11,45 @@ interface IModal {
 
 const Modal = ({ imgSrc, imgAlt, projectText, link, projectTitle, handleModalData }: IModal) => {
   return (
-    <div className="portfolio-modal">
-      <div className="portfolio-modal-bg" onClick={() => handleModalData({ text: '', link: '', image: '' })}></div>
+    <div className="portfolio-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+      <div 
+        className="portfolio-modal-bg" 
+        onClick={() => handleModalData({ text: '', link: '', image: '' })}
+        aria-label="Fechar modal"
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault()
+            handleModalData({ text: '', link: '', image: '' })
+          }
+        }}
+      ></div>
       <div className="portfolio-modal-body">
         <figure>
-          <img className="portfolio-modal-body-image" src={imgSrc} alt={imgAlt} loading="lazy" />
+          <img 
+            className="portfolio-modal-body-image" 
+            src={imgSrc} 
+            alt={imgAlt} 
+            loading="lazy"
+            width="400"
+            height="300"
+          />
         </figure>
         <div className="portfolio-modal-body-content">
-          <p className="mt-2">
-            <b>{projectTitle} </b>
+          <h3 id="modal-title">{projectTitle}</h3>
+          <p id="modal-description">
             {projectText}
           </p>
           <p>
-            <b>Link: </b>
-            <a href="/" className="hyper-link" onClick={() => window.open(link)}>
+            <strong>Link: </strong>
+            <a 
+              href={link} 
+              className="hyper-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label={`Visitar ${projectText} (abre em nova aba)`}
+            >
               {link}
             </a>
           </p>

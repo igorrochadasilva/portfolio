@@ -21,11 +21,32 @@ const BoxImage: React.FC<IImages> = ({ image, text, link, handleModalData }) => 
           image: image,
         })
       }
+      role="button"
+      tabIndex={0}
+      aria-label={`Ver detalhes do projeto: ${text}`}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          handleModalData({
+            text: text,
+            link: link,
+            image: image,
+          })
+        }
+      }}
     >
       <figure>
-        <img className="portfolio-image" src={getPortfolioAssetSrc(image)} alt={text} width="240px" height="120px" />
+        <img 
+          className="portfolio-image" 
+          src={getPortfolioAssetSrc(image)} 
+          alt={`Screenshot do projeto ${text}`} 
+          width="240px" 
+          height="120px"
+          loading="lazy"
+        />
 
-        <div className="overflow"></div>
+        <div className="overflow" aria-hidden="true"></div>
+        <span className="sr-only">Visualizar projeto</span>
         {iconSearch}
       </figure>
     </div>

@@ -8,14 +8,14 @@
   },
   "Home": {
     "title": "Hello, I am",
-    "typedString1": "FullStack Developer",
-    "typedString2": "Vtex Developer",
-    "typedString3": "React Developer",
+    "typedString1": "Frontend-Focused Full Stack Engineer",
+    "typedString2": "React.js Specialist",
+    "typedString3": "Next.js Developer",
     "button": "contact"
   },
   "AboutMe": {
     "title": "Who I am",
-    "text": "Hello! I'm Igor Rocha, a fullstack developer with five years of experience. My passion for technology has led me to web development, where I create a variety of digital products. On the front end, I use React.js, TypeScript, Tailwind CSS, Sass, and Vite or Next.js. With Apollo Client and GraphQL, I build dynamic and efficient interfaces, prioritizing usability. On the backend, I rely on Node.js and NestJS, combined with PostgreSQL, TypeORM, or Prisma to ensure secure data storage. I master Docker for app portability and consistency. I develop everything from websites and blogs to e-commerce sites, email marketing, dashboards, and internal systems, offering ongoing maintenance and support. For code quality, I use Jest and Vitest for automated testing, ensuring product stability and reliability. I'm ready to turn your ideas into digital reality!"
+    "text": "Hello! I'm Igor Rocha, a Frontend-Focused Full Stack Engineer with 6+ years of experience. I have participated in the development of scalable and high-performance web applications. Specialized in React.js, Next.js, TypeScript, and Tailwind CSS, delivering fast, responsive, and maintainable user interfaces that improved user engagement and product usability. While primarily focused on frontend, I also have experience with backend technologies including Node.js, NestJS, PostgreSQL, and Prisma, supporting API development and data integration. Projects include e-commerce platforms, internal tools, and dashboards, consistently aligned with business goals. Skilled in modern workflows using Docker, Jest, and Vitest, and effective in delivering results within agile, cross-functional teams."
   },
   "Services": {
     "title": "Services",

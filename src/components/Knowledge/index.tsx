@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid'
 import { useContext } from 'react'
 
 import Knowledge from './Knowledge'
@@ -17,8 +16,8 @@ const Knowledges: React.FC = () => {
 
       <div className="container">
         <div className="row justify-content-center cards">
-          {list.map((knowledge: { text: string; image: string }) => (
-            <Knowledge key={uuidv4()} icon={knowledge.image} technology={knowledge.text} />
+          {list.map((knowledge: { text: string; image: string }, index: number) => (
+            <Knowledge key={`knowledge-${index}-${knowledge.text}`} icon={knowledge.image} technology={knowledge.text} />
           ))}
         </div>
       </div>

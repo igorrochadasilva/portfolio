@@ -8,14 +8,14 @@
   },
   "Home": {
     "title": "Olá, eu sou",
-    "typedString1": "Desenvolvedor FullStack",
-    "typedString2": "Desenvolvedor Vtex",
-    "typedString3": "Desenvolvedor React",
+    "typedString1": "Frontend-Focused Full Stack Engineer",
+    "typedString2": "Especialista em React.js",
+    "typedString3": "Desenvolvedor Next.js",
     "button": "contato"
   },
   "AboutMe": {
     "title": "Quem sou",
-    "text": "Olá! Sou Igor Rocha, desenvolvedor fullstack com cinco anos de experiência. Minha paixão pela tecnologia me conduziu ao desenvolvimento web, onde crio uma variedade de produtos digitais. No front end, utilizo React.js, TypeScript, Tailwind CSS, Sass e Vite ou Next.js. Com Apollo Client e GraphQL, construo interfaces dinâmicas e eficientes, priorizando a usabilidade. No backend, confio em Node.js e NestJS, combinados com PostgreSQL, TypeORM ou Prisma para garantir armazenamento seguro de dados. Domino Docker para portabilidade e consistência dos aplicativos. Desenvolvo desde sites e blogs até e-commerces, e-mails marketing, dashboards e sistemas internos, oferecendo manutenção e suporte contínuos. Para qualidade do código, utilizo Jest e Vitest para testes automatizados, assegurando estabilidade e confiabilidade do produto. Estou pronto para transformar suas ideias em realidade digital!"
+    "text": "Olá! Sou Igor Rocha, Frontend-Focused Full Stack Engineer com mais de 6 anos de experiência. Participei do desenvolvimento de aplicações web escaláveis e de alta performance. Especializado em React.js, Next.js, TypeScript e Tailwind CSS, entregando interfaces de usuário rápidas, responsivas e sustentáveis que melhoraram o engajamento do usuário e a usabilidade do produto. Embora focado principalmente no frontend, também tenho experiência com tecnologias backend incluindo Node.js, NestJS, PostgreSQL e Prisma, apoiando o desenvolvimento de APIs e integração de dados. Os projetos incluem plataformas de e-commerce, ferramentas internas e dashboards, consistentemente alinhados com os objetivos de negócio. Habilidoso em fluxos de trabalho modernos usando Docker, Jest e Vitest, e eficaz na entrega de resultados dentro de equipes ágeis e multifuncionais."
   },
   "Services": {
     "title": "Serviços",
