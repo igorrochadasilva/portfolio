@@ -23,3 +23,6 @@ env
 *.njsproj
 *.sln
 *.sw?
+
+# Scripts de desenvolvimento (opcional - descomente se não quiser versionar)
+# scripts/

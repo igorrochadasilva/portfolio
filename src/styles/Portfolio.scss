@@ -217,13 +217,12 @@
   color: var(--primary-red);
 }
 
-@media (max-width: 570px) {
-  .image-box-wrapper {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
+.image-box-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
+
 
 // Animação para o botão de fechar
 @keyframes pulse-glow {

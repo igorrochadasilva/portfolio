@@ -25,9 +25,24 @@ export default defineConfig({
     },
     minify: 'esbuild',
     chunkSizeWarningLimit: 1000,
-    sourcemap: false
+    sourcemap: false,
+    // Otimizações para browsers modernos
+    target: 'esnext',
+    cssCodeSplit: true
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-hook-form', 'react-typed']
+  },
+  // Otimizações de performance
+  esbuild: {
+    target: 'esnext',
+    format: 'esm'
+  },
+  // Excluir scripts do build
+  publicDir: 'public',
+  assetsInclude: ['**/*.webp', '**/*.png', '**/*.jpg', '**/*.svg'],
+  // Ignorar pasta scripts no build
+  define: {
+    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
   }
 })
