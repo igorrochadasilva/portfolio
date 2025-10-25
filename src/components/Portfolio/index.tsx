@@ -55,7 +55,7 @@ const Portfolio = () => {
       {showModal ? (
         <Modal
           imgAlt={modalData.text}
-          imgSrc={getPortfolioAssetSrc(modalData.image)}
+          imgSrc={getPortfolioAssetSrc(modalData.image, 'modal')}
           link={modalData.link}
           projectText={modalData.text}
           projectTitle={project}
