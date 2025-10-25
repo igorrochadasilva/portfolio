@@ -8,7 +8,7 @@
   }
   .portfolio-modal {
     position: fixed;
-    z-index: 10;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -16,23 +16,137 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 
     .portfolio-modal-bg {
+      position: absolute;
       width: 100%;
       height: 100%;
-      opacity: 0.9;
-      background-color: #000000;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      cursor: pointer;
     }
-    .portfolio-modal-body {
-      position: fixed;
-      background-color: #fff;
-      z-index: 10;
-      .portfolio-modal-body-content {
-        padding: 20px;
 
-        @media (max-width: 570px) {
+      .portfolio-modal-body {
+        position: relative;
+        background: rgba(27, 36, 44, 0.95);
+        backdrop-filter: blur(20px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        max-width: 800px;
+        width: 100%;
+        max-height: 90vh;
+        overflow: hidden;
+        z-index: 10000;
+
+        .modal-close-btn {
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          width: 48px;
+          height: 48px;
+          background: var(--primary-pink);
+          border: 2px solid var(--primary-white);
+          border-radius: 50%;
+          color: var(--primary-white);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 10001;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 12px rgba(206, 32, 95, 0.4);
+          backdrop-filter: blur(10px);
+          
+          // Animação de pulsação sutil
+          animation: pulse-glow 2s ease-in-out infinite;
+
+          &:hover {
+            background: var(--primary-hard-pink);
+            border-color: var(--primary-orange);
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(206, 32, 95, 0.6);
+          }
+
+          &:focus {
+            outline: 3px solid var(--primary-orange);
+            outline-offset: 3px;
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+
+          svg {
+            width: 24px;
+            height: 24px;
+            stroke-width: 3;
+            transition: transform 0.3s ease;
+          }
+
+          &:hover svg {
+            transform: rotate(90deg);
+          }
+        }
+
+      figure {
+        margin: 0;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+        
+        .portfolio-modal-body-image {
+          width: 100%;
+          height: auto;
+          max-height: 400px;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .portfolio-modal-body-content {
+        padding: 24px;
+        color: var(--primary-white);
+
+        h3 {
+          color: var(--primary-pink);
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 8px;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        p {
+          margin-bottom: 16px;
+          line-height: 1.6;
+          color: var(--primary-grey);
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .hyper-link {
+          color: var(--primary-orange);
+          text-decoration: none;
+          font-weight: 500;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: var(--primary-pink);
+          }
+        }
+
+        @media (max-width: 768px) {
+          padding: 20px;
+
+          h3 {
+            font-size: 1.1rem;
+          }
+
           p {
-            font-size: 20px;
+            font-size: 0.9rem;
           }
         }
       }
@@ -93,14 +207,6 @@
   cursor: pointer;
 }
 
-/*------------ OVERFLOW BOX ------------------*/
-.portfolio-modal-body-image {
-  width: 45rem;
-
-  @media (max-width: 570px) {
-    width: 100%;
-  }
-}
 
 .hyper-link {
   cursor: pointer;
@@ -116,5 +222,15 @@
     height: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+// Animação para o botão de fechar
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(206, 32, 95, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(206, 32, 95, 0.7), 0 0 0 4px rgba(206, 32, 95, 0.1);
   }
 }

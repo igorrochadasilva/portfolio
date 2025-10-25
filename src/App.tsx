@@ -6,6 +6,8 @@ import GlobalContext from './components/context/GlobalContext'
 import Header from './components/Header'
 import Home from './components/Home'
 import LoadingSpinner from './components/LoadingSpinner'
+import ScrollProgress from './components/ScrollProgress'
+import BackToTop from './components/BackToTop'
 
 // Lazy load components
 const AboutMe = lazy(() => import('./components/AboutMe'))
@@ -20,6 +22,7 @@ function App() {
   return (
     <>
       <a href="#main-content" className="skip-link">Pular para o conteúdo principal</a>
+      <ScrollProgress />
       <BackgroundAnimation />
       <GlobalContext>
         <Header />
@@ -38,6 +41,7 @@ function App() {
           <Footer />
         </Suspense>
       </GlobalContext>
+      <BackToTop />
     </>
   )
 }
