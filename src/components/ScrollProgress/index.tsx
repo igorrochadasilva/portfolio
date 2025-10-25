@@ -17,11 +17,17 @@ const ScrollProgress: React.FC = () => {
   }, [])
 
   return (
-    <div className="scroll-progress">
+    <div 
+      className="scroll-progress" 
+      role="progressbar" 
+      aria-valuenow={Math.round(scrollProgress)} 
+      aria-valuemin={0} 
+      aria-valuemax={100}
+      aria-label={`Progresso de rolagem: ${Math.round(scrollProgress)}%`}
+    >
       <div 
         className="scroll-progress-bar" 
         style={{ width: `${scrollProgress}%` }}
-        aria-label={`Progresso de rolagem: ${Math.round(scrollProgress)}%`}
       />
     </div>
   )

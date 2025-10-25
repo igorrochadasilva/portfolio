@@ -6,19 +6,22 @@
     padding-top: 2rem;
 
     .profile-img {
-      width: 255px;
-      height: 255px;
+      width: 256px;
+      height: 384px;
       border-radius: 50%;
       border: 10px solid var(--primary-white);
       transition: all 0.2s ease-in-out;
       animation: float 4s ease-in-out infinite;
+      object-fit: cover;
+      object-position: center;
 
       &:hover {
         transform: scale(1.1);
       }
 
       @media (max-width: 468px) {
-        width: 100%;
+        width: 200px;
+        height: 300px;
       }
     }
   }

@@ -36,14 +36,14 @@ const BoxImage: React.FC<IImages> = ({ image, text, link, handleModalData }) => 
       }}
     >
       <figure>
-        <img 
-          className="portfolio-image" 
-          src={getPortfolioAssetSrc(image)} 
-          alt={`Screenshot do projeto ${text}`} 
-          width="240px" 
-          height="120px"
-          loading="lazy"
-        />
+                <img
+                  className="portfolio-image"
+                  src={getPortfolioAssetSrc(image)}
+                  alt={`Screenshot do projeto ${text}`}
+                  width="240"
+                  height="120"
+                  loading="lazy"
+                />
 
         <div className="overflow" aria-hidden="true"></div>
         <span className="sr-only">Visualizar projeto</span>
