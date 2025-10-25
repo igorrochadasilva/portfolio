@@ -4,7 +4,7 @@ import messages_br from '../../messages/texts-pt-br.json'
 // user props type
 type UserType = {
   language: string
-  messages: any
+  messages: typeof messages_br
 }
 
 // context props type

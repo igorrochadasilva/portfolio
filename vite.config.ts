@@ -10,5 +10,24 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Vendor chunks
+          'react-vendor': ['react', 'react-dom'],
+          'animation-vendor': ['react-animation-on-scroll'],
+          'form-vendor': ['react-hook-form'],
+          'typed-vendor': ['react-typed'],
+          'email-vendor': ['@emailjs/browser'],
+          'utils-vendor': ['classnames']
+        }
+      }
+    },
+    minify: 'esbuild',
+    chunkSizeWarningLimit: 1000,
+    sourcemap: false
   },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-hook-form', 'react-typed']
+  }
 })

@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Portfolio - Front end Developer Igor Rocha",
+  "short_name": "Igor Rocha Portfolio",
+  "name": "Portfólio Igor Rocha - Frontend-Focused Full Stack Engineer",
+  "description": "Portfólio profissional de Igor Rocha, Frontend-Focused Full Stack Engineer especialista em React.js, Next.js, TypeScript e Tailwind CSS",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,16 +11,22 @@
     {
       "src": "logoIgor.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logoIgor.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#ce205f",
+  "background_color": "#151719",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "pt-BR",
+  "categories": ["portfolio", "developer", "technology"]
 }

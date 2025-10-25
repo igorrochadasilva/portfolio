@@ -10,7 +10,13 @@ const Knowledge: React.FC<IKnowledgeProps> = ({ icon, technology }) => {
     <div className="cardBox">
       <div className="cardBox__icon">
         <figure>
-          <img src={getKnowledgeAssetSrc(icon)} alt={technology} width="100px" height="100px" loading="lazy" />
+          <img 
+            src={getKnowledgeAssetSrc(icon)} 
+            alt={technology} 
+            width="100px" 
+            height="100px"
+            loading="lazy"
+          />
         </figure>
       </div>
       <div className="cardBox__title">

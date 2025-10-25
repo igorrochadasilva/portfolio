@@ -1,4 +1,4 @@
-import iconMe from '../../assets/iconMe.jpg'
+import iconMe from '../../assets/me.webp'
 
 const Picture: React.FC = () => (
   <div className="col-lg-6 col-xm-12">

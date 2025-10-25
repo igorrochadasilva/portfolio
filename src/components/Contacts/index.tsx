@@ -46,14 +46,17 @@ const Contacts: React.FC = () => {
         ) : null}
       </div>
       <div className="container">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} role="form" aria-label="Formulário de contato">
           <div className="row">
             <div className="col-md-6 col-xs-12">
               <div className="text-center">
+                <label htmlFor="name" className="sr-only">{MContacts.form.name}</label>
                 <input
+                  id="name"
                   type="text"
                   className="form-control"
                   placeholder={MContacts.form.name}
+                  aria-describedby={errors.name ? "name-error" : undefined}
                   {...register('name', {
                     required: MContacts.form.nameRequired,
                     maxLength: {
@@ -64,13 +67,18 @@ const Contacts: React.FC = () => {
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">{errors.name && errors.name.message}</span>
+              <span id="name-error" className="error-message" role="alert" aria-live="polite">
+                {errors.name && errors.name.message}
+              </span>
               {/* PHONE INPUT */}
               <div className="text-center">
+                <label htmlFor="phone" className="sr-only">{MContacts.form.phone}</label>
                 <input
-                  type="text"
+                  id="phone"
+                  type="tel"
                   className="form-control"
                   placeholder={MContacts.form.phone}
+                  aria-describedby={errors.phone ? "phone-error" : undefined}
                   {...register('phone', {
                     required: MContacts.form.phoneRequired,
                     pattern: {
@@ -81,52 +89,74 @@ const Contacts: React.FC = () => {
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">{errors.phone && errors.phone.message}</span>
+              <span id="phone-error" className="error-message" role="alert" aria-live="polite">
+                {errors.phone && errors.phone.message}
+              </span>
               {/* EMAIL INPUT */}
               <div className="text-center">
+                <label htmlFor="email" className="sr-only">{MContacts.form.email}</label>
                 <input
+                  id="email"
                   type="email"
                   className="form-control"
                   placeholder={MContacts.form.email}
+                  aria-describedby={errors.email ? "email-error" : undefined}
                   {...register('email', {
                     required: MContacts.form.emailRequired,
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: MContacts.form.phoneMsg,
+                      message: MContacts.form.emailMsg,
                     },
                   })}
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">{errors.email && errors.email.message}</span>
+              <span id="email-error" className="error-message" role="alert" aria-live="polite">
+                {errors.email && errors.email.message}
+              </span>
               {/* SUBJECT INPUT */}
               <div className="text-center">
+                <label htmlFor="subject" className="sr-only">{MContacts.form.sub}</label>
                 <input
+                  id="subject"
                   type="text"
                   className="form-control"
                   placeholder={MContacts.form.sub}
+                  aria-describedby={errors.subject ? "subject-error" : undefined}
                   {...register('subject', {
                     required: MContacts.form.subRequired,
                   })}
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">{errors.subject && errors.subject.message}</span>
+              <span id="subject-error" className="error-message" role="alert" aria-live="polite">
+                {errors.subject && errors.subject.message}
+              </span>
             </div>
             <div className="col-md-6 col-xs-12">
               {/* DESCRIPTION */}
               <div className="text-center">
+                <label htmlFor="description" className="sr-only">{MContacts.form.description}</label>
                 <textarea
+                  id="description"
                   className="form-control"
                   placeholder={MContacts.form.description}
+                  aria-describedby={errors.description ? "description-error" : undefined}
+                  rows={6}
                   {...register('description', {
                     required: MContacts.form.descriptionRequired,
                   })}
                 ></textarea>
                 <div className="line"></div>
               </div>
-              <span className="error-message">{errors.description && errors.description.message}</span>
-              <button className="btn-main-offer contact-btn" type="submit">
+              <span id="description-error" className="error-message" role="alert" aria-live="polite">
+                {errors.description && errors.description.message}
+              </span>
+              <button 
+                className="btn-main-offer contact-btn" 
+                type="submit"
+                aria-label="Enviar formulário de contato"
+              >
                 {MContacts.button}
               </button>
             </div>

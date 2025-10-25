@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid'
-
 import { useContext, useState } from 'react'
 
 import { AnimationOnScroll } from 'react-animation-on-scroll'
@@ -39,14 +37,14 @@ const Portfolio = () => {
         </h1>
         <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
           <div className="image-box-wrapper row">
-            {projects.map((project: IProject) => {
+            {projects.map((project: IProject, index: number) => {
               return (
                 <BoxImage
                   text={project.text}
                   image={project.image}
                   link={project.link}
                   handleModalData={handleModalData}
-                  key={uuidv4()}
+                  key={`project-${index}-${project.image}`}
                 />
               )
             })}
