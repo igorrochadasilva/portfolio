@@ -5,32 +5,111 @@
   h1 {
     text-align: center;
     color: var(--primary-white);
+    margin-bottom: 2rem;
+  }
+
+  .knowledge-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    .filter-btn {
+      padding: 0.75rem 1.5rem;
+      border: 2px solid var(--primary-pink);
+      background: transparent;
+      color: var(--primary-pink);
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+
+      &:hover {
+        background: var(--primary-pink);
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+      }
+
+      &.active {
+        background: var(--primary-pink);
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+      }
+
+      @media (max-width: 768px) {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+    }
   }
 
   .cards {
-    margin-top: 4rem;
+    margin-top: 2rem;
     gap: 20px;
 
     .cardBox {
-      border-radius: 10px;
+      border-radius: 12px;
       width: 200px;
       height: 200px;
-      background-color: #fff;
+      background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      transition: 0.3s all ease-in-out;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       margin: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1),
+                  0 2px 8px rgba(0, 0, 0, 0.06);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+
+      // Efeito de brilho sutil
+      &::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        transition: all 0.6s;
+        transform: rotate(45deg);
+        opacity: 0;
+      }
 
       @media (min-width: 490px) {
         &:hover {
-          transform: scale(1.1);
+          transform: translateY(-8px) scale(1.05);
+          box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15),
+                      0 8px 16px rgba(0, 0, 0, 0.1),
+                      0 0 40px rgba(255, 105, 180, 0.1);
+          border-color: rgba(255, 105, 180, 0.3);
+
+          &::before {
+            animation: shimmer 1.5s infinite;
+          }
+
+          .cardBox__icon img {
+            transform: scale(1.1) rotate(5deg);
+          }
         }
       }
 
       &__icon {
         padding-bottom: 15px;
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
         @media (max-width: 490px) {
           padding-bottom: 0px;
@@ -39,12 +118,26 @@
         img {
           width: 100px;
           height: 100px;
+          transition: transform 0.4s ease;
+          filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
         }
       }
 
-      &__title p {
-        margin-bottom: 0;
-        font-weight: 700;
+      &__title {
+        p {
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 0.9rem;
+          color: #2c3e50;
+          transition: color 0.3s ease;
+        }
+      }
+
+      @media (min-width: 490px) {
+        &:hover .cardBox__title p {
+          color: var(--primary-pink);
+          font-weight: 700;
+        }
       }
 
       @media all and (max-width: 1199px) {
@@ -57,12 +150,45 @@
         width: 120px;
         height: 120px;
         margin: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
         img {
           width: 50px;
           height: auto;
         }
+
+        &__title p {
+          font-size: 0.75rem;
+        }
       }
+
+      // Animação de entrada
+      animation: fadeInUp 0.6s ease backwards;
     }
+  }
+}
+
+// Animação de shimmer no hover
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+// Animação de entrada
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -155,98 +155,152 @@
   },
   "Knowledges": {
     "title": "Conhecimentos",
+    "showAll": "Ver Todos",
+    "categories": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "tools": "Ferramentas"
+    },
     "list": [
       {
         "text": "React",
-        "image": "react"
+        "image": "react",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Html5",
-        "image": "html5"
+        "image": "html5",
+        "category": "frontend",
+        "level": "intermediate"
       },
       {
         "text": "Javascript",
-        "image": "javascript"
+        "image": "javascript",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Css3",
-        "image": "css3"
+        "image": "css3",
+        "category": "frontend",
+        "level": "intermediate"
       },
       {
         "text": "Jquery",
-        "image": "jquery"
+        "image": "jquery",
+        "category": "frontend",
+        "level": "intermediate"
       },
       {
         "text": "Git",
-        "image": "git"
+        "image": "git",
+        "category": "tools",
+        "level": "advanced"
       },
       {
         "text": "Sass",
-        "image": "sass"
+        "image": "sass",
+        "category": "frontend",
+        "level": "intermediate"
       },
       {
         "text": "Typescript",
-        "image": "typescript"
+        "image": "typescript",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Vtex",
-        "image": "vtex"
+        "image": "vtex",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Webpack",
-        "image": "webpack"
+        "image": "webpack",
+        "category": "tools",
+        "level": "intermediate"
       },
       {
         "text": "Redux",
-        "image": "redux"
+        "image": "redux",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Styled Component",
-        "image": "styled-component"
+        "image": "styled-component",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Next",
-        "image": "next"
+        "image": "next",
+        "category": "frontend",
+        "level": "advanced"
       },
       {
         "text": "Vite",
-        "image": "vite"
+        "image": "vite",
+        "category": "tools",
+        "level": "intermediate"
       },
       {
         "text": "Graphql",
-        "image": "graphql"
+        "image": "graphql",
+        "category": "backend",
+        "level": "advanced"
       },
       {
         "text": "Prisma",
-        "image": "prisma"
+        "image": "prisma",
+        "category": "backend",
+        "level": "advanced"
       },
       {
         "text": "PostgreSql",
-        "image": "postgresql"
+        "image": "postgresql",
+        "category": "backend",
+        "level": "advanced"
       },
       {
         "text": "Nest",
-        "image": "nest"
+        "image": "nest",
+        "category": "backend",
+        "level": "advanced"
       },
       {
         "text": "Node",
-        "image": "node"
+        "image": "node",
+        "category": "backend",
+        "level": "advanced"
       },
       {
         "text": "Jest",
-        "image": "jest"
+        "image": "jest",
+        "category": "tools",
+        "level": "advanced"
       },
       {
         "text": "AWS",
-        "image": "aws"
+        "image": "aws",
+        "category": "cloud",
+        "level": "intermediate"
       },
       {
         "text": "Google Cloud",
-        "image": "google-cloud"
+        "image": "google-cloud",
+        "category": "cloud",
+        "level": "intermediate"
       },
       {
         "text": "Vercel",
-        "image": "versel"
+        "image": "versel",
+        "category": "cloud",
+        "level": "advanced"
       }
     ]
   },
