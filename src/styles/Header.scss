@@ -104,6 +104,10 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+
+    @media (max-width: 375px) {
+      gap: 4px;
+    }
   }
 
   .mobile-nav-item {

@@ -23,14 +23,9 @@ const sizes = [
 
 // Lista de imagens do portfolio
 const portfolioImages = [
-  'home-bardahl.webp',
-  'home-katmandu.webp',
-  'home-phooto.webp',
-  'home-rihappy.webp',
-  'home-sao-cristovao.webp',
-  'home-sbed.webp',
-  'home-vivenda-do-caramao.webp',
-  'home-caiado-pneus.webp'
+  'home-cinemark.webp',
+  'home-nutricionista.webp',
+  'home-enlite.webp'
 ];
 
 async function optimizeImage(inputPath, outputPath, width, height) {

@@ -20,6 +20,9 @@ const Experiences: React.FC = () => {
     windowWidth()
   }, [])
 
+  // Extract all experiences dynamically
+  const experienceKeys = Object.keys(MExperiences).filter((key) => key.startsWith('experiece'))
+
   return (
     <section id="experience" className="experience">
       <div className="d-flex justify-content-center my-5">
@@ -28,32 +31,21 @@ const Experiences: React.FC = () => {
         </h1>
       </div>
       <div className="container experience-wrapper">
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce={true}>
-              <Experience year={MExperiences.experiece1.year} text={MExperiences.experiece1.text} />
-            </AnimationOnScroll>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-left">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <AnimationOnScroll animateIn={isMobile ? `animate__fadeInRight` : `animate__fadeInLeft`} animateOnce={true}>
-              <Experience year={MExperiences.experiece2.year} text={MExperiences.experiece2.text} />
-            </AnimationOnScroll>
-          </div>
-        </div>
-        {/* - */}
-        <div className="timeline-block timeline-block-right">
-          <div className="marker"></div>
-          <div className="timeline-content">
-            <AnimationOnScroll animateIn="animate__fadeInRight" animateOnce={true}>
-              <Experience year={MExperiences.experiece3.year} text={MExperiences.experiece3.text} />
-            </AnimationOnScroll>
-          </div>
-        </div>
+        {experienceKeys.map((key, index) => {
+          const isRight = index % 2 === 0
+          const animation = isRight ? 'animate__fadeInRight' : isMobile ? 'animate__fadeInRight' : 'animate__fadeInLeft'
+          
+          return (
+            <div key={key} className={`timeline-block ${isRight ? 'timeline-block-right' : 'timeline-block-left'}`}>
+              <div className="marker"></div>
+              <div className="timeline-content">
+                <AnimationOnScroll animateIn={animation} animateOnce={true}>
+                  <Experience year={MExperiences[key].year} text={MExperiences[key].text} />
+                </AnimationOnScroll>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </section>
   )

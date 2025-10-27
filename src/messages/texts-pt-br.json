@@ -8,14 +8,14 @@
   },
   "Home": {
     "title": "Olá, eu sou",
-    "typedString1": "Frontend-Focused Full Stack Engineer",
+    "typedString1": "Desenvolvedor Full Stack",
     "typedString2": "Especialista em React.js",
     "typedString3": "Desenvolvedor Next.js",
     "button": "contato"
   },
   "AboutMe": {
     "title": "Quem sou",
-    "text": "Olá! Sou Igor Rocha, Frontend-Focused Full Stack Engineer com mais de 6 anos de experiência. Participei do desenvolvimento de aplicações web escaláveis e de alta performance. Especializado em React.js, Next.js, TypeScript e Tailwind CSS, entregando interfaces de usuário rápidas, responsivas e sustentáveis que melhoraram o engajamento do usuário e a usabilidade do produto. Embora focado principalmente no frontend, também tenho experiência com tecnologias backend incluindo Node.js, NestJS, PostgreSQL e Prisma, apoiando o desenvolvimento de APIs e integração de dados. Os projetos incluem plataformas de e-commerce, ferramentas internas e dashboards, consistentemente alinhados com os objetivos de negócio. Habilidoso em fluxos de trabalho modernos usando Docker, Jest e Vitest, e eficaz na entrega de resultados dentro de equipes ágeis e multifuncionais."
+    "text": "Olá! Sou Igor Rocha, Full Stack Engineer com mais de 6 anos de experiência desenvolvendo aplicações web escaláveis e de alta performance em mercados LATAM. Especializado em React.js, Next.js, TypeScript e Tailwind CSS, construindo interfaces responsivas e sustentáveis que geram engajamento mensurável dos usuários. Experiente com Node.js, NestJS, PostgreSQL e Prisma, entregando integrações de API confiáveis e soluções backend. Contribuí para projetos internacionais como Cinemark LATAM, melhorando performance do sistema, experiência do usuário e workflows de release. Forte defensor de Clean Code, princípios SOLID e práticas modernas de DevOps (Docker, GitHub Actions, CI/CD). Colaborativo e orientado à qualidade, consistentemente entregando soluções alinhadas ao negócio em ambientes ágeis e multifuncionais."
   },
   "Services": {
     "title": "Serviços",
@@ -58,12 +58,37 @@
       ]
     },
     "experiece3": {
-      "year": "2019-2024",
+      "year": "2020-2024",
       "text": [
-        "Desenvolvimento do e-commerce na plataforma VTEX para Rihappy.com.br utilizando HTML5, SCSS, Javascript, jQuery, Gulp, Babel, Node.js, Webpack, React, Typescript e Graphql.",
-        "Desenvolvimento de novas funcionalidades e refatoração de código.",
-        "Automatização de processos usando Postman Collection Runner e Node.js.",
-        "Versionamento com Bitbucket e Gitlab. Metodologia Scrum. Testes de features, merge e deploy para produção."
+        "Desenvolvi e mantive uma plataforma de e-commerce na VTEX para Rihappy.com.br, utilizando HTML5, SCSS, JavaScript, jQuery, Gulp, Babel, Node.js, Webpack, React, TypeScript e GraphQL, melhorando a velocidade de carregamento das páginas e as taxas de conversão dos clientes.",
+        "Implementei novas funcionalidades e refatorei código legado com Next.js e Tailwind CSS, aprimorando o desempenho e a manutenibilidade da aplicação, reduzindo bugs de front-end em 25%.",
+        "Gerenciei controle de versão e processos de CI com Bitbucket e GitLab, garantindo integridade do código e colaboração eficiente da equipe.",
+        "Apliquei metodologia Scrum para otimizar o gerenciamento de projetos, melhorando a previsibilidade de entregas de sprint e a produtividade geral da equipe.",
+        "Suportei o pipeline de deploy em produção, fazendo merge e validação de releases no Git para garantir entregas estáveis e de alta qualidade."
+      ]
+    },
+    "experiece4": {
+      "year": "2024",
+      "text": [
+        "Participei da reestruturação completa do frontend e backend, modernizando a stack e infraestrutura para escalabilidade, manutenibilidade e performance.",
+        "Migrei o backend de Node.js + Express para NestJS, aplicando princípios SOLID, arquitetura modular e integração completa com PostgreSQL.",
+        "Implementei documentação Swagger, melhorei o versionamento de API e estabeleci contratos claros entre equipes de frontend e backend.",
+        "Configurei pipelines CI/CD usando GitHub Actions, automatizando workflows de build, teste e deploy para frontend e backend.",
+        "Migrei o frontend do Next.js 14 para 15, introduzi React Query para gerenciamento eficiente de estado do servidor e refatorei componentes UI usando TypeScript, Tailwind CSS, DaisyUI e padrões modernos de React.",
+        "Implementei testes automatizados com Jest e Cypress, garantindo confiabilidade end-to-end e segurança contra regressões em releases.",
+        "Fiz deploy de aplicações frontend e backend no Google Cloud com pipelines de integração e entrega contínuas.",
+        "Colaborei estreitamente com designers e stakeholders para definir fluxos de usuário e garantir conexão perfeita entre lógica de negócio e implementação técnica."
+      ]
+    },
+    "experiece5": {
+      "year": "2024-2025",
+      "text": [
+        "Liderei os lançamentos da Cinemark Peru e Paraguai como Technical Lead, coordenando diretamente com clientes e fornecedores para definir estratégias de integração que garantissem transições suaves de plataforma e operações confiáveis de sistema.",
+        "Participei de reuniões técnicas com equipes internacionais para alinhar planos de integração backend e frontend, garantindo entrega consistente em ambientes LATAM.",
+        "Realizei code reviews e validações arquiteturais, promovendo aderência a princípios de Clean Code e SOLID em toda a equipe de desenvolvimento.",
+        "Desenvolvi e mantive a plataforma web internacional da Cinemark LATAM, garantindo alta escalabilidade, performance e localização (Next.js, TypeScript, React Query, Zustand, Node.js, Express, Redis, Jest).",
+        "Colaborei com squads multidisciplinares (backend, QA, design, produto) para construir soluções manuteníveis, testáveis e focadas no usuário, alinhadas com objetivos de negócio.",
+        "Integrei e otimizei APIs REST para sessões, ingresso e cinemas, melhorando consistência de dados e tempos de resposta em todas as regiões."
       ]
     }
   },
@@ -71,6 +96,21 @@
     "title": "Portfolio",
     "project": "Projeto",
     "projects": [
+      {
+        "text": "Plataforma internacional Cinemark LATAM.",
+        "link": "https://www.cinemark-peru.com/",
+        "image": "cinemark"
+      },
+      {
+        "text": "Plataforma reestruturada Enlite.",
+        "link": "https://enlite.health/",
+        "image": "enlite"
+      },
+      {
+        "text": "Site Nutricionista Elias Lima.",
+        "link": "https://nutricionistaeliaslima.com.br/",
+        "image": "nutricionista"
+      },
       {
         "text": "Loja de brinquedos Rihappy.",
         "link": "https://rihappy.com.br",
@@ -195,6 +235,18 @@
       {
         "text": "Jest",
         "image": "jest"
+      },
+      {
+        "text": "AWS",
+        "image": "aws"
+      },
+      {
+        "text": "Google Cloud",
+        "image": "google-cloud"
+      },
+      {
+        "text": "Vercel",
+        "image": "versel"
       }
     ]
   },
