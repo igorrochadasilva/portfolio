@@ -3,11 +3,9 @@ import { getKnowledgeAssetSrc } from '../../utils/getKnowledgeAssets'
 interface IKnowledgeProps {
   icon: string
   technology: string
-  category: 'frontend' | 'backend' | 'cloud' | 'tools'
-  level: 'advanced' | 'intermediate' | 'beginner'
 }
 
-const Knowledge: React.FC<IKnowledgeProps> = ({ icon, technology, category, level }) => {
+const Knowledge: React.FC<IKnowledgeProps> = ({ icon, technology }) => {
   return (
     <div className="cardBox">
       <div className="cardBox__icon">

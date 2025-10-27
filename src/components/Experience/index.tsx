@@ -4,9 +4,19 @@ import { UserContext } from '../context/AppContext'
 
 import Experience from './Experience'
 
+interface IExperience {
+  year: string
+  text: string[]
+}
+
+interface IExperiences {
+  title: string
+  [key: string]: IExperience | string
+}
+
 const Experiences: React.FC = () => {
   const context = useContext(UserContext)
-  const MExperiences = context.state.messages.Experiences
+  const MExperiences = context.state.messages.Experiences as IExperiences
 
   const [isMobile, setIsMobile] = useState(false)
 
@@ -34,13 +44,14 @@ const Experiences: React.FC = () => {
         {experienceKeys.map((key, index) => {
           const isRight = index % 2 === 0
           const animation = isRight ? 'animate__fadeInRight' : isMobile ? 'animate__fadeInRight' : 'animate__fadeInLeft'
+          const experience = MExperiences[key] as IExperience
           
           return (
             <div key={key} className={`timeline-block ${isRight ? 'timeline-block-right' : 'timeline-block-left'}`}>
               <div className="marker"></div>
               <div className="timeline-content">
                 <AnimationOnScroll animateIn={animation} animateOnce={true}>
-                  <Experience year={MExperiences[key].year} text={MExperiences[key].text} />
+                  <Experience year={experience.year} text={experience.text} />
                 </AnimationOnScroll>
               </div>
             </div>

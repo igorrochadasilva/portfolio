@@ -62,8 +62,6 @@ const Knowledges: React.FC = () => {
               key={`knowledge-${selectedCategory}-${index}-${knowledge.text}`} 
               icon={knowledge.image} 
               technology={knowledge.text}
-              category={knowledge.category}
-              level={knowledge.level}
             />
           ))}
         </div>
